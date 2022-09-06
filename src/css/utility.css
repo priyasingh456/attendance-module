@@ -1,0 +1,126 @@
+template{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.plain-link{
+    list-style: none;
+}
+
+.remove-underline{
+    text-decoration: none;
+    color: initial;
+}
+
+.selected{
+    color: rgb(0, 204, 204);
+}
+
+.ml-p{
+    margin-left: 1rem;
+}
+
+
+.mt-p{
+    margin-top: .5rem;
+}
+
+
+.mtt-p{
+    margin-top: .8rem;
+}
+
+.mtt-n{
+    margin-top: -.05rem;
+}
+
+.mt-n{
+    margin-top: -.5rem;
+}
+
+
+.mr-p{
+    margin-right: 3rem;
+}
+
+.mb-p{
+    margin-bottom: 2rem;
+}
+
+.mbb-p{
+    margin-bottom: 1rem;
+}
+
+.mr-pp{
+    margin-right: .8rem;
+}
+
+.pb-p{
+    padding-bottom: .5rem;
+}
+
+.img-responsive{
+    width: 100%;
+}
+
+.dis-none{
+    display: none;
+}
+
+.d-none{
+    display: none;
+}
+
+.opacity{
+    opacity: .6;
+}
+
+.opacity2{
+    opacity: .8;
+}
+
+.hr{
+    width: 80%;
+    background-color: rgb(195, 196, 198);
+    height: 1px;
+}
+
+.btn{
+    border: none;
+    padding: .6rem .8rem;
+    border-radius: 4px;
+    color: white;
+}
+
+.btn-primary{
+    background-color: rgb(0, 204, 204);
+}
+
+.btn-danger{
+    background-color: rgb(215, 3, 3);
+}
+
+.txt-center{
+    text-align: center;
+}
+
+.font-size-sm{
+    font-size: .7rem;
+}
+
+.font-size-lra{
+    font-size: .8rem;
+}
+
+.blue-color{
+    color: rgb(130, 212, 248);
+}
+
+.white-txt{
+    color: white;
+}
+
+.border {
+    border: 1px solid rgb(251, 251, 251);
+}
