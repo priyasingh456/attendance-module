@@ -1,13 +1,9 @@
 import axios from "axios";
 
-const baseUrl = 'http://localhost:3003/api/student/list';
+const baseUrl = 'https://attend-bakend.onrender.com/api/student/list';
 
-const getStudentsByPage = async (_page) => {
-    const response = await axios.get(baseUrl, {
-        params: {
-            _page
-        }
-    });
+const getStudentsByPage = async () => {
+    const response = await axios.get(baseUrl);
     return response.data;
 };
 

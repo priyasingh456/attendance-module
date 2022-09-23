@@ -48,7 +48,7 @@ export default {
                     name: data.name,
                 }
                 console.log(addStudentData);
-                const response = await axios.post(`http://localhost:3003/api/student/add`, addStudentData, {
+                const response = await axios.post(`https://attend-bakend.onrender.com/api/student/add`, addStudentData, {
                   header: {
                     'Content-type': 'application/json',
                   }

@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const baseUrl = 'http://localhost:3003/api/atten/list';
+const baseUrl = 'https://attend-bakend.onrender.com/api/atten/list';
 
 const getAttendance = async () => {
     const response = await axios.get(baseUrl);

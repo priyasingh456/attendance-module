@@ -44,15 +44,14 @@ export default {
         return {
             status: 'LOADING',
             students: [],
-            error: null,
-            page: 1
+            error: null
         };
     },
 
     methods: {
         async fetchStudents(){
             try{
-                this.students = await getStudentsByPage(this.page);
+                this.students = await getStudentsByPage();
                 this.status = 'LOADED';
             }catch(error){
                 console.log(error.message);
@@ -60,16 +59,6 @@ export default {
                 this.error = error;
             }
         },
-        previous(){
-            if(this.page !== 1){
-                this.page = this.page - 1;
-                this.fetchStudents();
-            }
-        },
-        next(){
-            this.page = this.page + 1;
-            this.fetchStudents();
-        }
 
     },
     created(){

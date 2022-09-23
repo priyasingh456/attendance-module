@@ -45,7 +45,7 @@ export default {
                     roll: rollInt,
                 }
                 console.log(deleteStudentData);
-                const response = await axios.post(`http://localhost:3003/api/student/delete`, deleteStudentData, {
+                const response = await axios.post(`https://attend-bakend.onrender.com/api/student/delete`, deleteStudentData, {
                     headers: { 
                         'Content-type': 'application/json',
                     },
