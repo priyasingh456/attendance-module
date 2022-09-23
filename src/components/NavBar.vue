@@ -44,7 +44,7 @@ export default {
             if(this.status === 'Logout'){
                 localStorage.removeItem('email');
             }
-            this.$router.push({ path: '/login' })
+            this.$router.routes.push({ path: '/login' })
         }
     }
 
