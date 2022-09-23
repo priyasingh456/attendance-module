@@ -26,10 +26,10 @@
                     <i class="fa-brands fa-linkedin-in icons"></i>
                 </div>
                 <div>
-                    <p><span class="font-size-lar">Don't have an account?</span> <strong><router-link to="/" class="plain-link remove-underline white-txt">SIGNUP</router-link></strong></p>
+                    <p><span class="font-size-lar">Don't have an account?</span> <strong><router-link to="/" class="plain-link remove-underline white-txt">SKIP</router-link></strong></p>
                 </div>
                 <div>
-                    <p class="font-size-sm opacity2">Copyright © 2022, Meeting-App All Rights Reserved</p>
+                    <p class="font-size-sm opacity2">Copyright © 2022, Attendance-App All Rights Reserved</p>
                 </div>
                 <div>
                     <p class="font-size-sm mt-n"><span class="blue-color">Terms od Use</span> | <span class="blue-color">Privacy Policy</span></p>
@@ -46,9 +46,6 @@
 
 import axios from 'axios';
 
-const TOKEN_KEY = "token";
-const EMAIL_KEY = "email";
-const NAME_KEY = "name";
 
 export default {
    name: 'LoginPage',
@@ -104,11 +101,9 @@ export default {
                     })
                     .then((response) => {
                         console.log(response);
-                        this.$toast.success('Successfully Loggedin');
-                        const {token, email, name } = response.data;
-                        localStorage.setItem(TOKEN_KEY, token);
-                        localStorage.setItem(EMAIL_KEY, email);
-                        localStorage.setItem(NAME_KEY, name);
+                        this.$toast.success('Successfully LoggedIn');
+                        const {email} = response.data;
+                        localStorage.setItem("email", email);
                         this.$router.push('/');
                     })
                     .catch((error) => {
@@ -157,9 +152,10 @@ export default {
 }
 .left-side div h1{
     margin-bottom: 1.5rem;
+    font-size: 1.6rem;
 }
 .left-side div input{
-    width: 18rem;
+    width: 20rem;
     padding: .7rem;
     margin: .4rem 0;
     border: 1px solid rgb(255, 254, 254);
@@ -185,13 +181,14 @@ export default {
 }
 
 .login-btn{
-    width: 19.5rem;
-    padding: .7rem;
+    width: 20rem;
+    padding: .6rem;
     margin: .4rem 0;
     border-radius: 4px;
     border: none;
     color: #01515c;
     cursor: pointer;
+    font-size: .9rem;
 }
 .login-btn:hover{
     background-color: rgb(226, 228, 228);

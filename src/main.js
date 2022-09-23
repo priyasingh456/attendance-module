@@ -5,11 +5,13 @@ import router from '../src/router/index.js';
 import VueToast from 'vue-toast-notification';
 import 'vue-toast-notification/dist/theme-sugar.css';
 import utility from '@/css/utility.css'
+import AppSpinner from './components/utility/AppSpinner';
 import index from '@/css/index.css'
 
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import { BootstrapVue, IconsPlugin } from 'bootstrap-vue'
 
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 Vue.config.productionTip = false
 
@@ -19,6 +21,7 @@ Vue.use(index);
 
 Vue.use(BootstrapVue)
 Vue.use(IconsPlugin)
+Vue.component( 'AppSpinner', AppSpinner );
 
 Vue.use(VueToast, {
   position: 'top-right',

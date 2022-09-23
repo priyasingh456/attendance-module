@@ -18,7 +18,7 @@
                     <button type="submit" class="reset-btn"><strong>RESET</strong></button>
                 </div>
                 <div>
-                    <p class="font-size-sm opacity2 mttt-p">Copyright © 2022, Meeting-App All Rights Reserved</p>
+                    <p class="font-size-sm opacity2 mttt-p">Copyright © 2022, Attendance-App All Rights Reserved</p>
                 </div>
                 <div>
                     <p class="font-size-sm mt-n"><span class="blue-color">Terms od Use</span> | <span class="blue-color">Privacy Policy</span></p>
@@ -76,9 +76,10 @@ export default {
 }
 .left-side div h1{
     margin-bottom: 2rem;
+    font-size: 1.6rem;
 }
 .left-side div input{
-    width: 18rem;
+    width: 20rem;
     padding: .7rem;
     margin: .4rem 0;
     border: 1px solid rgb(255, 254, 254);
@@ -104,13 +105,14 @@ export default {
 }
 
 .reset-btn{
-    width: 19.5rem;
-    padding: .7rem;
+    width: 20rem;
+    padding: .6rem;
     margin: .4rem 0;
     border-radius: 4px;
     border: none;
     color: #01515c;
     cursor: pointer;
+    font-size: .9rem;
 }
 .reset-btn:hover{
     background-color: rgb(226, 228, 228);
