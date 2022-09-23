@@ -11,8 +11,8 @@
         <div v-else class="table-content">
           <h2>List of Students
             <div class="float-end">
-              <button class="btn btn-sm btn-blue me-2" @click="previous">Previous</button>
-              <button class="btn btn-sm btn-blue" @click="next">Next</button>
+              <button class="btn btn-sm btn-blue me-2" v-on:click="previous">Previous</button>
+              <button class="btn btn-sm btn-blue" v-on:click="next">Next</button>
             </div>
           </h2>
           <div class="table-sec">

@@ -13,8 +13,8 @@
           <h4>View Attendance
           <div class="float-end">
             <p class="small-font">{{attendanceList.date}}</p>
-            <button class="btn btn-sm btn-blue me-2" @click="previous">Previous</button>
-            <button class="btn btn-sm btn-blue" @click="next">Next</button>
+            <button class="btn btn-sm btn-blue me-2" v-on:click="previous">Previous</button>
+            <button class="btn btn-sm btn-blue" v-on:click="next">Next</button>
           </div>
           </h4>
           <hr />

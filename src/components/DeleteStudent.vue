@@ -53,7 +53,7 @@ export default {
                 .then((response) => {
                     console.log(response);
                     this.$toast.success('Student Successfully Deleted');
-                    this.$router.push('/home');
+                    this.$router.push({ path: '/' })
                 })
                 .catch((error) => {
                     console.log("2" + error.message);

@@ -25,17 +25,17 @@
                   <td>{{student.name}}</td>
                   <td>
                       <div class="radio">
-                          <label><input type="radio" @click="setPresent(student.roll, 1)" :name=student.roll />Present</label>
+                          <label><input type="radio" v-on:click="setPresent(student.roll, 1)" :name=student.roll />Present</label>
                       </div>
                   </td>
                   <td>
                     <div class="radio">
-                          <label><input type="radio" @click="setPresent(student.roll, 0)" :name=student.roll checked />Absent</label>
+                          <label><input type="radio" v-on:click="setPresent(student.roll, 0)" :name=student.roll checked />Absent</label>
                       </div>
                   </td>
                 </tr>
               </table>
-              <button class="save-btn" type="submit" @click="onClickSubmit" >Save Attendance</button>
+              <button class="save-btn" type="submit" v-on:click="onClickSubmit" >Save Attendance</button>
             </div>
           </div>
         </div>
@@ -107,7 +107,7 @@ export default {
           .then((response) => {
               console.log(response);
               this.$toast.success('Successfully saved attendance');
-              this.$router.push('/');
+              this.$router.push({ path: '/' })
           })
           .catch((error) => {
               console.log(error.message);
@@ -137,7 +137,7 @@ export default {
         this.$toast.error('You are not allowed to take attendance', {
           duration: 3000
         });
-        this.$router.push('/');
+        this.$router.push({ path: '/' })
       }
     },
 }

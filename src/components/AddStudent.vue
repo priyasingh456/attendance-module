@@ -56,7 +56,7 @@ export default {
                 .then((response) => {
                     console.log(response);
                     this.$toast.success('Student Successfully Added');
-                    this.$router.push('/home');
+                    this.$router.push({ path: '/' })
                 })
                 .catch((error) => {
                     console.log(error.message);

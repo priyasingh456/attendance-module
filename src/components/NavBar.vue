@@ -10,7 +10,7 @@
         </div>
         <div class="username-sec">
             <p>{{user}}</p>
-            <p @click="logout">{{status}}</p>
+            <p v-on:click="logout">{{status}}</p>
         </div>
     </nav>
 </template>
@@ -44,7 +44,7 @@ export default {
             if(this.status === 'Logout'){
                 localStorage.removeItem('email');
             }
-            this.$router.push('/login');
+            this.$router.push({ path: '/login' })
         }
     }
 

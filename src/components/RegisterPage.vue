@@ -130,7 +130,7 @@ export default {
                 .then((response) => {
                     console.log(response);
                     this.$toast.success('Successfully Registered');
-                    this.$router.push('/login');
+                    this.$router.push({ path: '/login' })
                 })
                 .catch((error) => {
                     console.log(error.message);
