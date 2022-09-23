@@ -70,7 +70,7 @@ export default {
             this.$toast.error('You are not allowed to delete student', {
                duration: 3000
             });
-            this.$router.routes.push({ path: '/' })
+            this.$router.push({ path: '/' })
         }
     }
 

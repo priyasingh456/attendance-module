@@ -56,7 +56,7 @@ export default {
                 .then((response) => {
                     console.log(response);
                     this.$toast.success('Student Successfully Added');
-                    this.$router.routes.push({ path: '/' })
+                    this.$router.push({ path: '/' })
                 })
                 .catch((error) => {
                     console.log(error.message);
@@ -73,7 +73,7 @@ export default {
             this.$toast.error('You are not allowed to add student', {
                duration: 3000
             });
-            this.$router.routes.push({ path: '/' })
+            this.$router.push({ path: '/' })
         }
 
     }

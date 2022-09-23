@@ -104,7 +104,7 @@ export default {
                         this.$toast.success('Successfully LoggedIn');
                         const {email} = response.data;
                         localStorage.setItem("email", email);
-                        this.$router.routes.push({ path: '/' })
+                        this.$router.push({ path: '/' })
                     })
                     .catch((error) => {
                         console.log(error.message);
