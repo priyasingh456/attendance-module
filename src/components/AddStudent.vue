@@ -73,7 +73,7 @@ export default {
             this.$toast.error('You are not allowed to add student', {
                duration: 3000
             });
-            this.$router.push('/');
+            this.$router.push({ path: '/' })
         }
 
     }
