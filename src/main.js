@@ -16,11 +16,11 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 Vue.config.productionTip = false
 
 Vue.use(Router);
-Vue.use(utility);
-Vue.use(index);
 
 Vue.use(BootstrapVue)
 Vue.use(IconsPlugin)
+Vue.use(utility);
+Vue.use(index);
 Vue.component( 'AppSpinner', AppSpinner );
 
 Vue.use(VueToast, {
