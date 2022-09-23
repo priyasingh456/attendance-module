@@ -81,7 +81,9 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
+@import '@/css/index.css';
+@import '@/css/utility.css';
 
 .add-container{
    width: 100%;

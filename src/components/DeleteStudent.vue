@@ -79,6 +79,9 @@ export default {
 
 <style scoped>
 
+@import '@/css/index.css';
+@import '@/css/utility.css';
+
 .delete-container{
    width: 100%;
    display: flex;

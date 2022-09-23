@@ -123,6 +123,9 @@ export default {
 
 <style scoped>
 
+@import '@/css/index.css';
+@import '@/css/utility.css';
+
 .main-login{
     height: 100vh;
     width: 100%;

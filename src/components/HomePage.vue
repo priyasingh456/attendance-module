@@ -75,6 +75,8 @@ export default {
 </script>
 
 <style scoped>
+@import '@/css/index.css';
+@import '@/css/utility.css';
 
 .main-section{
     height: 800px;

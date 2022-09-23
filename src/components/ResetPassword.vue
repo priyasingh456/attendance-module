@@ -47,6 +47,9 @@ export default {
 
 <style scoped>
 
+@import '@/css/index.css';
+@import '@/css/utility.css';
+
 .main-resetpass{
     height: 100vh;
     width: 100%;

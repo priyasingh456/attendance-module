@@ -89,6 +89,9 @@ export default {
 
 <style scoped>
 
+@import '@/css/index.css';
+@import '@/css/utility.css';
+
 .edit-attendance-con{
   width: 100%;
   display: flex;

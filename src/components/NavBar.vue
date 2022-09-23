@@ -56,6 +56,9 @@ export default {
 
 <style scoped>
 
+@import '@/css/index.css';
+@import '@/css/utility.css';
+
 .nav-bar{
     width: 100%;
     display: flex;

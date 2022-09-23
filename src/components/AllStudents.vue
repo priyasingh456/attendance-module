@@ -73,6 +73,9 @@ export default {
 
 <style scoped>
 
+@import '@/css/index.css';
+@import '@/css/utility.css';
+
 .all-student{
   display: flex;
   flex-direction: column;

@@ -153,6 +153,9 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 
+@import '@/css/index.css';
+@import '@/css/utility.css';
+
 .main-signIn{
     height: 100vh;
     width: 100%;
