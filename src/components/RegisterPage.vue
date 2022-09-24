@@ -15,9 +15,8 @@
                 <div>
                     <input type="password" placeholder="Confirm password" class="border" id="Con-password" v-model="conPassword">
                 </div>
-                <div class="admin-field">
-                  <label for="admin">Is Admin?</label>
-                  <input type="checkbox" id="admin" name="admin" value="admin">
+                <div>
+                    <input type="number" placeholder="Pin" class="border" id="pin">
                 </div>
                 <div>
                     <button type="submit" class="signup-btn"><strong>SIGN UP</strong></button>
@@ -34,7 +33,7 @@
                     <p><span class="font-size-lar">Already have an account?</span> <strong><router-link to="/login" class="plain-link remove-underline white-txt">LOGIN</router-link></strong></p>
                 </div>
                 <div>
-                    <p class="font-size-sm">Copyright © 2022, Meeting-App All Rights Reserved</p>
+                    <p class="font-size-sm mt-n">Copyright © 2022, Meeting-App All Rights Reserved</p>
                 </div>
                 <div>
                     <p class="font-size-sm mt-n"><span class="blue-color">Terms od Use</span> | <span class="blue-color">Privacy Policy</span></p>
@@ -62,7 +61,7 @@ export default {
             name: '',
             email: '',
             password: '',
-            conPassword: ''
+            conPassword: '',
         }
     },
     methods: {
@@ -183,8 +182,13 @@ export default {
     align-items: center;
     padding: 1rem;
 }
+
+.left-side h1{
+    font-size: 1.6rem;
+}
+
 .left-side div input{
-    width: 18rem;
+    width: 20rem;
     padding: .7rem;
     margin: .4rem 0;
     background-color: initial;
@@ -198,33 +202,14 @@ export default {
 }
 .icons{
     font-size: .8rem;
-    margin: .5rem;
-}
-
-.admin-field{
-  display: inline;
-  font-size: .8rem;
-}
-
-.admin-field label{
-  margin: .8rem 0 2rem 2.1rem;
-}
-
-[type=checkbox] { 
-  height: 21px; 
-  width: 21px; 
-}
-
-input[type=checkbox]{
-    display: inline-block;
-    margin-right: 30px;
+    margin: .3rem;
 }
 
 .white-txt:hover{
     color: #7ffbfb;
 }
 .signup-btn{
-    width: 19.5rem;
+    width: 20rem;
     padding: .7rem;
     margin: .4rem 0;
     border-radius: 4px;
@@ -268,9 +253,6 @@ input[type=checkbox]{
     .right-side{
         display: none;
     }
-}
-.error-username{
-    border: 1.2px solid rgb(222, 3, 3);
 }
 
 </style>

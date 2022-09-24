@@ -26,7 +26,7 @@
                     <i class="fa-brands fa-linkedin-in icons"></i>
                 </div>
                 <div>
-                    <p><span class="font-size-lar">Don't have an account?</span> <strong><router-link to="/" class="plain-link remove-underline white-txt">SKIP</router-link></strong></p>
+                    <p><span class="font-size-lar">Don't have an account?</span> <strong><router-link to="/register" class="plain-link remove-underline white-txt">TEACHER? </router-link></strong><strong><router-link to="/" class="plain-link remove-underline white-txt"> STUDENT</router-link></strong></p>
                 </div>
                 <div>
                     <p class="font-size-sm opacity2">Copyright © 2022, Attendance-App All Rights Reserved</p>

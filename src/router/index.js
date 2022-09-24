@@ -1,5 +1,6 @@
 import Router from 'vue-router';
 import LoginPage from '../components/LoginPage.vue';
+import RegisterPage from '../components/RegisterPage.vue';
 import ResetPassword from '../components/ResetPassword.vue'
 import TakeAttendance from '../components/TakeAttendance.vue'
 import ViewAttendance from '../components/ViewAttendance.vue'
@@ -16,6 +17,11 @@ const router = new Router({
             name: 'login-page',
             path: '/login',
             component: LoginPage
+        },
+        {
+            name: 'login-page',
+            path: '/register',
+            component: RegisterPage
         },
         {
             name: 'reset-password',
