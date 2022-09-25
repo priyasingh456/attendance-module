@@ -16,7 +16,7 @@
                     <input type="password" placeholder="Confirm password" class="border" id="Con-password" v-model="conPassword">
                 </div>
                 <div>
-                    <input type="number" placeholder="Pin" class="border" id="pin">
+                    <input type="password" placeholder="Pin" class="border" id="pin" v-model="pin">
                 </div>
                 <div>
                     <button type="submit" class="signup-btn"><strong>SIGN UP</strong></button>
@@ -62,6 +62,7 @@ export default {
             email: '',
             password: '',
             conPassword: '',
+            pin: ''
         }
     },
     methods: {
@@ -104,39 +105,47 @@ export default {
             return true;
         },
         async handleSubmit(){
-            
-            const data = {
-                name: this.name,
-                email: this.email,
-                password: this.password,
-                conPassword : this.conPassword
-            };
-            //console.log(data)
-            
-            if(this.validateFormData(data)) {
-                const registerData = {
-                    name: data.name,
-                    email: data.email,
-                    password: data.password,
-                    conPassword : data.conPassword
-                }
-                console.log(registerData);
-                const response = await axios.post(`http://localhost:3003/api/users`, registerData, {
-                  header: {
-                    'Content-type': 'application/json',
-                  }
-                })
-                .then((response) => {
-                    console.log(response);
-                    this.$toast.success('Successfully Registered');
-                    this.$router.push({ path: '/login' })
-                })
-                .catch((error) => {
-                    console.log(error.message);
-                });
-                console.log(response)
+
+            console.log(this.pin);
+
+            if(this.pin == '1234'){
+                const data = {
+                    name: this.name,
+                    email: this.email,
+                    password: this.password,
+                    conPassword : this.conPassword
+                };
+                //console.log(data)
                 
+                if(this.validateFormData(data)) {
+                    const registerData = {
+                        name: data.name,
+                        email: data.email,
+                        password: data.password,
+                        conPassword : data.conPassword
+                    }
+                    console.log(registerData);
+                    const response = await axios.post(`https://attend-bakend.onrender.com/api/users`, registerData, {
+                    header: {
+                        'Content-type': 'application/json',
+                    }
+                    })
+                    .then((response) => {
+                        console.log(response);
+                        this.$toast.success('Successfully Registered');
+                        this.$router.push({ path: '/login' })
+                    })
+                    .catch((error) => {
+                        console.log(error.message);
+                    });
+                    console.log(response)
+                    
+                }
+            
+            }else{
+                this.$toast.error('Pin is not valid');
             }
+            
             
         }
     }
